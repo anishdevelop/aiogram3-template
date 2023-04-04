@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "aiogram3-template"
+version = "1.0.0"
+description = "Aiogram 3 template"
+authors = ["Kirill <teckytgut@gmail.com>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = "3.0.0b7"
+redis = "^4.5.4"
+pydantic = {extras = ["dotenv"], version = "^1.10.7"}
+sqlalchemy = "^2.0.7"
+aiosqlite = "^0.18.0"
+fluentogram = "^1.1.6"
+jinja2 = "^3.1.2"
+
+[tool.poetry.group.dev.dependencies]
+when-changed = "^0.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
